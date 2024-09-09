@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <nav id="navbar" class="px-12 py-4 bg-slate-800 text-white shadow-2xl w-full h-fit fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out">
+      <div class="container flex justify-between items-center">
+        <button onclick="openNavbar()" class="absolute top-4 right-8 md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-10 h-10 fill-white">
+            <path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+          </svg>
+        </button>
+        <div class="logo flex items-center gap-4">
+          <img src="images/logo sekolah 1.png" alt="" class="w-14 h-14" />
+          <h4 class="font-bold">SMA IT HSI IDN</h4>
+        </div>
+        <div class="list gap-8 hidden md:flex">
+          <ul class="flex gap-8">
+            <li><a href="index.html" class="font-medium hover:text-sky-500 transition-all duration-300 ease-in-out">Beranda</a></li>
+            <li><a href="partner.html" class="font-medium hover:text-sky-500 transition-all duration-300 ease-in-out">Partner</a></li>
+            <li><a href="profil.html" class="font-medium hover:text-sky-500 transition-all duration-300 ease-in-out">Profil</a></li>
+            <li><a href="berita.html" class="font-medium hover:text-sky-500 transition-all duration-300 ease-in-out">Berita</a></li>
+            <li><a href="about.html" class="font-medium hover:text-sky-500 transition-all duration-300 ease-in-out">Tentang Kami</a></li>
+            <li><a href="gallery.html" class="font-medium hover:text-sky-500 transition-all duration-300 ease-in-out">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="buttton hidden">
+          <button class="py-2 px-6 bg-sky-600 rounded-full text-white font-medium">Contact</button>
+        </div>
+      </div>
+    </nav>
+
+    <aside class="menu w-full h-full bg-slate-800 bg-opacity-95 fixed z-[999] -translate-y-full transition-all duration-500 ease-in-out top-0">
+      <button onclick="closeNavbar()" class="absolute top-4 right-8 z-[999]">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="w-10 h-10 fill-white">
+          <path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path>
+        </svg>
+      </button>
+
+      <div class="content h-full flex justify-center relative z-50">
+        <div class="logo">
+          <img src="images/logo sekolah 1.png" alt="" class="h-10 absolute top-4 left-8" />
+        </div>
+
+        <ul class="flex flex-col text-center gap-8 py-24">
+          <li><a href="" class="text-white font-medium text-sm">Beranda</a></li>
+          <li><a href="" class="text-white font-medium text-sm">Partner</a></li>
+          <li><a href="" class="text-white font-medium text-sm">Profil</a></li>
+          <li><a href="" class="text-white font-medium text-sm">Berita</a></li>
+          <li><a href="" class="text-white font-medium text-sm">Tentang Kami</a></li>
+          <li><a href="" class="text-white font-medium text-sm">Galery</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <section id="profil" class="w-full mt-32">
+      <div class="container w-full mx-auto px-14">
+        <div class="first-content w-full flex-col justify-center md:flex md:flex-row md:justify-between md:items-center">
+          <div class="caption" data-aos="zoom-in">
+            <p class="text-sm text-sky-500 text-right">Video</p>
+            <h3 class="font-bold text-2xl text-slate-800 mt-2 text-right">Vidio Profil SMA IT HSI IDN</h3>
+            <p class="text-sm text-slate-400 mt-8 mb-6 text-right">
+              Ini adalah video Profil SMA IT HSI IDN yang berisi <br />
+              tentang kegiatan pembelajaran, dan keseharian santri
+            </p>
+            <p class="text-sky-500 text-right text-sm hover:text-sky-800"><a target="_blank" href="https://youtu.be/3tWGITKsc1M?feature=shared">Klik Untuk menonton</a></p>
+          </div>
+          <div class="thumbnail mt-12" data-aos="zoom-in-up">
+            <img src="images/thumbnail.png" alt="" class="w-full" />
+          </div>
+        </div>
+        <div class="second-content w-full flex flex-col-reverse justify-center md:flex-row-reverse md:justify-between md:items-center mt-20">
+          <div class="caption" data-aos="zoom-in">
+            <p class="text-sm text-sky-500 mt-12">Video</p>
+            <h3 class="font-bold text-2xl text-slate-800 mt-2">Vidio Serah Terima Santri Baru</h3>
+            <p class="text-sm text-slate-400 mt-8 mb-6">
+              Ini adalah Vidio serah terima santri baru tahun ajaran 2024/2025 <br />
+              dan insyaAllah SMA IT HSI IDN akan buka pendaftaran setiap tahunya.
+            </p>
+            <a target="_blank" href="https://youtu.be/XlC8q6A_rHU?feature=shared" class="text-sky-500 text-sm mt-6 hover:text-sky-800">Klik Untuk menonton</a>
+          </div>
+          <div class="thumbnail" data-aos="zoom-in-up">
+            <img src="images/thumbnail2.png" alt="" class="w-full" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="w-full mt-32 bg-slate-800 text-white">
+      <div class="container w-full px-8 py-14 mx-auto">
+        <div class="content mx-auto">
+          <div class="logo flex items-center gap-3">
+            <img src="images/logo sekolah 1.png" alt="" class="w-12" />
+            <h2 class="font-bold">SMA IT HSI IDN</h2>
+          </div>
+
+          <div class="container-caption w-fit flex flex-col md:flex-row gap-16 justify-center">
+            <div class="navigation flex flex-col gap-4 mt-8">
+              <h2 class="font-bold">Navigation</h2>
+              <p class="font-extralight text-sm hover:text-sky-500 ease-in-out transition-all cursor-pointer duration-500 mt-4">Home</p>
+              <p class="font-extralight text-sm hover:text-sky-500 ease-in-out transition-all cursor-pointer duration-500">Info</p>
+              <p class="font-extralight text-sm hover:text-sky-500 ease-in-out transition-all cursor-pointer duration-500">News</p>
+              <p class="font-extralight text-sm hover:text-sky-500 ease-in-out transition-all cursor-pointer duration-500">About Us</p>
+              <p class="font-extralight text-sm hover:text-sky-500 ease-in-out transition-all cursor-pointer duration-500">Contact</p>
+            </div>
+
+            <div class="Program Pembelajaran flex flex-col gap-4 mt-8">
+              <h2 class="font-bold">Jurusan</h2>
+              <p class="font-extralight text-sm hover:text-sky-500 ease-in-out duration-500 transition-all cursor-pointer mt-4">Rekayasa Perangkat Lunak</p>
+              <p class="font-extralight text-sm hover:text-sky-500 ease-in-out duration-500 transition-all cursor-pointer">UI/UX Desain</p>
+              <p class="font-extralight text-sm hover:text-sky-500 ease-in-out duration-500 transition-all cursor-pointer">Desain Grafis</p>
+              <p class="font-extralight text-sm hover:text-sky-500 ease-in-out duration-500 transition-all cursor-pointer">Teknik Komputer Jaringan</p>
+              <p class="font-extralight text-sm hover:text-sky-500 ease-in-out duration-500 transition-all cursor-pointer">Cinematography</p>
+              <p class="font-extralight text-sm hover:text-sky-500 ease-in-out duration-500 transition-all cursor-pointer">Broadcasting</p>
+            </div>
+
+            <div class="addres flex flex-col gap-4 mt-8">
+              <h2 class="font-bold">Addres</h2>
+              <p class="font-extralight text-sm mt-4">
+                Jl. Jenderal Gatot Subroto No.370, Krajan, <br />
+                Baledono, Kec. Purworejo, Kabupaten Purworejo, <br />
+                Jawa Tengah 54118
+              </p>
+            </div>
+
+            <div class="contact flex flex-col mt-8 gap-5">
+              <h2 class="font-bold">Contact</h2>
+              <div class="telephone flex gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" class="fill-white w-6">
+                  <path
+                    d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"></path>
+                </svg>
+                <p class="font-extralight text-sm">(0204)123456</p>
+              </div>
+
+              <div class="message flex gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="fill-white w-6" viewBox="0 0 256 256">
+                  <path
+                    d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"></path>
+                </svg>
+                <p class="font-extralight text-sm">smaithsiidn@gmail.com</p>
+              </div>
+            </div>
+            <div class="sosmed flex flex-col gap-4 mt-8">
+              <h2 class="font-bold">Sosmed</h2>
+
+              <div class="instagram flex gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-white" viewBox="0 0 256 256">
+                  <path
+                    d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path>
+                </svg>
+                <a href="https://www.instagram.com/smaithsiidn/" target="_blank" class="font-extralight text-sm hover:text-sky-500 duration-500 transition-all ease-in-out">smaithsiidn</a>
+              </div>
+              <div class="facebook flex gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-white" viewBox="0 0 256 256">
+                  <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path>
+                </svg>
+                <a href="https://www.facebook.com/sma.ti.hsi.idn" target="_blank" class="font-extralight text-sm hover:text-sky-500 duration-500 transition-all ease-in-out">SMA TI HSI IDN</a>
+              </div>
+
+              <div class="youtube flex gap-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 fill-white" viewBox="0 0 256 256">
+                  <path
+                    d="M164.44,121.34l-48-32A8,8,0,0,0,104,96v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,145.05V111l25.58,17ZM234.33,69.52a24,24,0,0,0-14.49-16.4C185.56,39.88,131,40,128,40s-57.56-.12-91.84,13.12a24,24,0,0,0-14.49,16.4C19.08,79.5,16,97.74,16,128s3.08,48.5,5.67,58.48a24,24,0,0,0,14.49,16.41C69,215.56,120.4,216,127.34,216h1.32c6.94,0,58.37-.44,91.18-13.11a24,24,0,0,0,14.49-16.41c2.59-10,5.67-28.22,5.67-58.48S236.92,79.5,234.33,69.52Zm-15.49,113a8,8,0,0,1-4.77,5.49c-31.65,12.22-85.48,12-86,12H128c-.54,0-54.33.2-86-12a8,8,0,0,1-4.77-5.49C34.8,173.39,32,156.57,32,128s2.8-45.39,5.16-54.47A8,8,0,0,1,41.93,68c30.52-11.79,81.66-12,85.85-12h.27c.54,0,54.38-.18,86,12a8,8,0,0,1,4.77,5.49C221.2,82.61,224,99.43,224,128S221.2,173.39,218.84,182.47Z"></path>
+                </svg>
+                <a href="https://www.youtube.com/@smaithsiidnpurworejo" target="_blank" class="font-extralight text-sm hover:text-sky-500 duration-500 transition-all ease-in-out">SMA IT HSI-IDN</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
