@@ -1,3 +1,14 @@
+<?php 
+
+require 'koneksi.php';
+
+$blogs = getData('SELECT * FROM artikels');
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -145,66 +156,20 @@
             <p class="text-slate-400">Berikut Adalah Berita Seputar SMA IT HSI IDN Purworejo</p>
           </div>
           <div class="container-card flex flex-wrap gap-4 justify-center mt-10">
+
+          <?php foreach ($blogs as $blog) : ?>
             <div class="card bg-[url('./../images/susursungai.png')] bg-center bg-cover bg-no-repeat w-[397px] h-[462px] relative" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
               <div class="caption backdrop-blur-sm bg-[#1b1b1b6b] h-[190px] w-full px-6 py-8 absolute bottom-0">
-                <h2 class="text-2xl font-bold text-white">Kegiatan Susur Sungai</h2>
-                <p class="text-white text-sm font-light mt-3">Ini adalah Kegiatan santri ketika Susur Sungai untuk melatih ketangguhan santri ketika berada di alam</p>
+                <h2 class="text-2xl font-bold text-white truncate"><?= $blog["title"]?></h2>
+                <p class="text-white text-sm font-light mt-3 truncate"><?= $blog["content"]?></p>
                 <div class="caption-bottom flex justify-between mt-5">
-                  <p class="font-extralight text-sm text-white">31 Agustus 2024</p>
+                  <p class="font-extralight text-sm text-white"><?=$blog["created_at"]?></p>
                   <a href="susursungai.html"><p class="text-sm text-white hover:text-sky-300 transition-all duration-300 ease-in-out">Baca Selengkapnya</p></a>
                 </div>
               </div>
             </div>
-            <div class="card bg-[url('./../images/kunjungantaruna.png')] bg-center bg-cover bg-no-repeat w-[397px] h-[462px] relative" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-              <div class="caption backdrop-blur-sm bg-[#1b1b1b6b] h-[190px] w-full px-6 py-8 absolute bottom-0">
-                <h2 class="text-2xl font-bold text-white">Kunjungan Taruna Akpol</h2>
-                <p class="text-white text-sm font-light mt-3">Kunjungan Dari kakak kakak taruna Akpol di SMA TI HSI IDN, guna memberikan semangat kepada santri</p>
-                <div class="caption-bottom flex justify-between mt-5">
-                  <p class="font-extralight text-sm text-white">24 Juni 2024</p>
-                  <a href="kunjungantaruna.html"><p class="text-sm text-white hover:text-sky-300 transition-all duration-300 ease-in-out">Baca Selengkapnya</p></a>
-                </div>
-              </div>
-            </div>
-            <div class="card bg-[url('./../images/pelatihandamkar.png')] bg-center bg-cover bg-no-repeat w-[397px] h-[462px] relative" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-              <div class="caption backdrop-blur-sm bg-[#1b1b1b6b] h-[190px] w-full px-6 py-8 absolute bottom-0">
-                <h2 class="text-2xl font-bold text-white">Pelatihan Damkar</h2>
-                <p class="text-white text-sm font-light mt-3">SMA TI HSI IDN mengadakan pelatihan bersama damkar untuk mitigasi bencana kebakaran dan belajar menggunakan alat pemadam kebakaran</p>
-                <div class="caption-bottom flex justify-between mt-5">
-                  <p class="font-extralight text-sm text-white">26 Juni 2024</p>
-                  <a href="damkar.html"><p class="text-sm text-white hover:text-sky-300 transition-all duration-300 ease-in-out">Baca Selengkapnya</p></a>
-                </div>
-              </div>
-            </div>
-            <div class="card bg-[url('./../images/lombaagustus.png')] bg-center bg-cover bg-no-repeat w-[397px] h-[462px] relative" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-              <div class="caption backdrop-blur-sm bg-[#1b1b1b6b] h-[190px] w-full px-6 py-8 absolute bottom-0">
-                <h2 class="text-2xl font-bold text-white">Lomba Agustusan</h2>
-                <p class="text-white text-sm font-light mt-3">Para santri turut merayakan Hari kemerdekaan dengan mengadakan lomba di SMA IT HSI IDN yang di ikuti oleh para santri</p>
-                <div class="caption-bottom flex justify-between mt-5">
-                  <p class="font-extralight text-sm text-white">18 Agustus 2024</p>
-                  <a href=""><p class="text-sm text-white hover:text-sky-300 transition-all duration-300 ease-in-out">Baca Selengkapnya</p></a>
-                </div>
-              </div>
-            </div>
-            <div class="card bg-[url('./../images/longmarch.png')] bg-center bg-cover bg-no-repeat w-[397px] h-[462px] relative" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-              <div class="caption backdrop-blur-sm bg-[#1b1b1b6b] h-[190px] w-full px-6 py-8 absolute bottom-0">
-                <h2 class="text-2xl font-bold text-white">Long March</h2>
-                <p class="text-white text-sm font-light mt-3">Santri SMA IT HSI IDN berjalan sejauh 25km ke pantai dewaruci, dalam rangka kegiatan long march</p>
-                <div class="caption-bottom flex justify-between mt-5">
-                  <p class="font-extralight text-sm text-white">23 Desember 2023</p>
-                  <a href=""><p class="text-sm text-white hover:text-sky-300 transition-all duration-300 ease-in-out">Baca Selengkapnya</p></a>
-                </div>
-              </div>
-            </div>
-            <div class="card bg-[url('./../images/devfest.png')] bg-center bg-cover bg-no-repeat w-[397px] h-[462px] relative" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-              <div class="caption backdrop-blur-sm bg-[#1b1b1b6b] h-[190px] w-full px-6 py-8 absolute bottom-0">
-                <h2 class="text-2xl font-bold text-white">Devfest</h2>
-                <p class="text-white text-sm font-light mt-3">Santri SMA IT HSI IDN ikut berpastisipasi dalam acara devfest di jogjakarta yang diadakan langsung oleh Google developer Groups</p>
-                <div class="caption-bottom flex justify-between mt-5">
-                  <p class="font-extralight text-sm text-white">18 Desember 2023</p>
-                  <a href=""><p class="text-sm text-white hover:text-sky-300 transition-all duration-300 ease-in-out">Baca Selengkapnya</p></a>
-                </div>
-              </div>
-            </div>
+            <?php endforeach; ?>
+           
           </div>
 
           <div class="button flex justify-center mt-12">
